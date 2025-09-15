@@ -1,11 +1,23 @@
 import { NextResponse } from "next/server";
 import products from "@/data/product.json";
 
+// Define types for better type safety
+interface Message {
+  role: string;
+  content: string;
+}
+
+interface IntentResult {
+  hasBuyingIntent: boolean;
+  confidence: number;
+  reasoning: string;
+}
+
 // Minimal in-memory store
-const conversations: Record<string, { role: string; content: string }[]> = {};
+const conversations: Record<string, Message[]> = {};
 
 // 🤖 AI-powered buying intent detection (NO KEYWORDS NEEDED!)
-async function detectBuyingIntentWithAI(message: string, conversationHistory: any[] = []): Promise<{ hasBuyingIntent: boolean; confidence: number; reasoning: string }> {
+async function detectBuyingIntentWithAI(message: string, conversationHistory: Message[] = []): Promise<IntentResult> {
   const intentPrompt = `
 You are an expert at analyzing customer messages to detect buying intent. 
 
@@ -76,7 +88,6 @@ Examples:
   }
 }
 
-// 🔍 Find relevant products based on user query
 function findRelevantProducts(message: string) {
   const messageLower = message.toLowerCase();
   
