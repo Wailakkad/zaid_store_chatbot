@@ -1,0 +1,168 @@
+{
+  "store": {
+    "name": "Zaid_Store",
+    "main_name": "LBatal",
+    "locations": [
+      {
+        "name": "Sidi Moumen",
+        "address": "Rue 123, Sidi Moumen, Casablanca",
+        "image": "https://example.com/store-sidimoumen.jpg"
+      },
+      {
+        "name": "Lagroun",
+        "address": "Avenue 45, Lagroun, Casablanca",
+        "image": "https://example.com/store-lagroun.jpg"
+      }
+    ],
+    "phone": "+212612345678",
+    "email": "contact@zaidstore.ma",
+    "tiktok": "@zaid_store",
+    "website": "https://zaidstore.ma",
+    "hours": "9:00 - 20:00 Mon-Sat"
+  },
+  "products": [
+    {
+    "id": 1,
+    "name": "iPhone 8",
+    "category": "phone",
+    "price": 1500,
+    "currency": "MAD",
+    "stock": 10,
+    "description": "iPhone 8 b A11 chip, 64GB storage, battery 14h, camera 12MP",
+    "image": "https://i.pinimg.com/1200x/b7/d0/3d/b7d03d5e8535095095b96eb86c03c4a4.jpg",
+    "keywords": ["iphone 8", "apple", "phone"]
+  },
+  {
+    "id": 2,
+    "name": "iPhone X",
+    "category": "phone",
+    "price": 2200,
+    "currency": "MAD",
+    "stock": 8,
+    "description": "iPhone X b A11 chip, OLED display, face ID, battery 15h, camera 12MP",
+    "image": "https://i.pinimg.com/1200x/90/8a/48/908a48dbbdb7c2f494a0ae979a6fe938.jpg",
+    "keywords": ["iphone x", "apple", "phone"]
+  },
+  {
+    "id": 3,
+    "name": "iPhone 11",
+    "category": "phone",
+    "price": 3000,
+    "currency": "MAD",
+    "stock": 12,
+    "description": "iPhone 11 b A13 chip, dual camera 12MP, battery 17h, LCD display",
+    "image": "https://i.pinimg.com/736x/5b/ca/2e/5bca2e63ebd7f213ef50ba43a0496c48.jpg",
+    "keywords": ["iphone 11", "apple", "phone"]
+  },
+  {
+    "id": 4,
+    "name": "iPhone 12",
+    "category": "phone",
+    "price": 4000,
+    "currency": "MAD",
+    "stock": 15,
+    "description": "iPhone 12 b A14 chip, OLED display, dual camera, battery 18h",
+    "image": "https://i.pinimg.com/736x/c9/88/b2/c988b20df4c4b2d7858410d7424e608b.jpg",
+    "keywords": ["iphone 12", "apple", "phone"]
+  },
+  {
+    "id": 5,
+    "name": "iPhone 13",
+    "category": "phone",
+    "price": 5000,
+    "currency": "MAD",
+    "stock": 20,
+    "description": "iPhone 13 b A15 chip, dual camera, battery 19h, OLED display",
+    "image": "https://i.pinimg.com/736x/72/6e/04/726e0459d95ac770d29eb936a5ce9cd1.jpg",
+    "keywords": ["iphone 13", "apple", "phone"]
+  },
+  {
+    "id": 6,
+    "name": "iPhone 14",
+    "category": "phone",
+    "price": 6000,
+    "currency": "MAD",
+    "stock": 18,
+    "description": "iPhone 14 b A15 chip, dual camera, battery 20h, OLED display",
+    "image": "https://i.pinimg.com/736x/5b/b3/50/5bb3507da95499db6acccb0eeb035bca.jpg",
+    "keywords": ["iphone 14", "apple", "phone"]
+  },
+  {
+    "id": 7,
+    "name": "iPhone 15",
+    "category": "phone",
+    "price": 7000,
+    "currency": "MAD",
+    "stock": 10,
+    "description": "iPhone 15 b A16 chip, dual camera, battery 21h, OLED display",
+    "image": "https://i.pinimg.com/1200x/2a/44/76/2a4476dccddc18d30edb94c96812f3b5.jpg",
+    "keywords": ["iphone 15", "apple", "phone"]
+  },
+  {
+    "id": 8,
+    "name": "iPhone 16",
+    "category": "phone",
+    "price": 8000,
+    "currency": "MAD",
+    "stock": 5,
+    "description": "iPhone 16 b A17 chip, titanium design, triple camera, battery 22h",
+    "image": "https://i.pinimg.com/736x/72/cc/51/72cc51019963d2ac074b005b1f551e8f.jpg",
+    "keywords": ["iphone 16", "apple", "phone"]
+  },
+  {
+    "id": 9,
+    "name": "AirPods Pro 2 - Black",
+    "category": "earbuds",
+    "price": 2490,
+    "currency": "MAD",
+    "stock": 20,
+    "description": "Noise-cancelling wireless earbuds, spatial audio, battery 30h",
+    "image": "https://example.com/airpods-pro-black.jpg",
+    "keywords": ["airpods", "apple", "earbuds", "black"]
+  },
+  {
+    "id": 10,
+    "name": "AirPods Pro 2 - White",
+    "category": "earbuds",
+    "price": 2490,
+    "currency": "MAD",
+    "stock": 15,
+    "description": "Noise-cancelling wireless earbuds, spatial audio, battery 30h",
+    "image": "https://example.com/airpods-pro-white.jpg",
+    "keywords": ["airpods", "apple", "earbuds", "white"]
+  },
+  {
+    "id": 11,
+    "name": "AirPods Pro 2 - Blue",
+    "category": "earbuds",
+    "price": 2490,
+    "currency": "MAD",
+    "stock": 10,
+    "description": "Noise-cancelling wireless earbuds, spatial audio, battery 30h",
+    "image": "https://example.com/airpods-pro-blue.jpg",
+    "keywords": ["airpods", "apple", "earbuds", "blue"]
+  },
+  {
+    "id": 12,
+    "name": "Original iPhone Charger",
+    "category": "charger",
+    "price": 350,
+    "currency": "MAD",
+    "stock": 50,
+    "description": "Apple original charger, fast charging, 20W",
+    "image": "https://example.com/charger-original.jpg",
+    "keywords": ["charger", "original", "apple"]
+  },
+  {
+    "id": 13,
+    "name": "Copy iPhone Charger",
+    "category": "charger",
+    "price": 120,
+    "currency": "MAD",
+    "stock": 100,
+    "description": "High-quality copy charger, compatible with all iPhones",
+    "image": "https://example.com/charger-copy.jpg",
+    "keywords": ["charger", "copy", "iphone"]
+  }
+  ]
+}
