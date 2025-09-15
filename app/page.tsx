@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, KeyboardEvent } from 'react';
 import { Send, Smartphone, Watch, Headphones, Zap, MessageCircle, X, User, Mail, Phone, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 interface Message {
   id: string;
@@ -184,7 +185,7 @@ export default function ChatPage() {
               {/* Product Image */}
               <div className="text-center">
                 <div className="relative inline-block">
-                  <img
+                  <Image
                     src={selectedProduct.image}
                     alt={selectedProduct.name}
                     className="w-48 h-48 mx-auto rounded-2xl object-cover shadow-xl ring-4 ring-blue-100"
@@ -509,7 +510,7 @@ export default function ChatPage() {
                     >
                       <div className="flex items-start space-x-4">
                         <div className="flex-shrink-0">
-                          <img
+                          <Image
                             src={product.image}
                             alt={product.name}
                             className="w-16 h-16 rounded-lg object-cover shadow-md"
