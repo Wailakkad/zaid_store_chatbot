@@ -22,6 +22,13 @@ interface Product {
   image: string;
   keywords: string[];
 }
+type OrderFormData = {
+  name: string;
+  phone: string;
+  email?: string;
+  address: string;
+  store: string;
+};
 
 interface ApiResponse {
   reply: string;
@@ -149,11 +156,12 @@ export default function ChatPage() {
     });
   };
 
-  const handleOrderSubmit = (formData: any) => {
-    // Handle form submission logic here
-    console.log('Order submitted:', formData);
-    setShowOrderForm(false);
-  };
+const handleOrderSubmit = (formData: OrderFormData) => {
+  console.log("Order submitted:", formData);
+  setShowOrderForm(false);
+};
+
+
 
   return (
     <div className="flex flex-col h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
@@ -298,11 +306,16 @@ export default function ChatPage() {
               </div>
             </div>
             
-            <form className="p-6 space-y-4" onSubmit={(e) => {
-              e.preventDefault();
-              const formData = new FormData(e.target as HTMLFormElement);
-              handleOrderSubmit(Object.fromEntries(formData));
-            }}>
+              <form
+  className="p-6 space-y-4"
+  onSubmit={(e) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries()) as unknown as OrderFormData;
+    handleOrderSubmit(data);
+  }}
+>
+
               <div className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-2 flex items-center">
