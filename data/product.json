@@ -5,13 +5,13 @@
     "locations": [
       {
         "name": "Sidi Moumen",
-        "address": "Rue 123, Sidi Moumen, Casablanca",
-        "image": "https://example.com/store-sidimoumen.jpg"
+        "address": "Rue 123, Sidi Moumen, Casablanca"
+
       },
       {
         "name": "Lagroun",
-        "address": "Avenue 45, Lagroun, Casablanca",
-        "image": "https://example.com/store-lagroun.jpg"
+        "address": "Avenue 45, Lagroun, Casablanca"
+        
       }
     ],
     "phone": "+212612345678",
@@ -117,7 +117,7 @@
     "currency": "MAD",
     "stock": 20,
     "description": "Noise-cancelling wireless earbuds, spatial audio, battery 30h",
-    "image": "https://example.com/airpods-pro-black.jpg",
+    "image": "https://i.pinimg.com/1200x/a5/68/2e/a5682eb2355a3c32c8ee71d6461f9f82.jpg",
     "keywords": ["airpods", "apple", "earbuds", "black"]
   },
   {
@@ -128,7 +128,7 @@
     "currency": "MAD",
     "stock": 15,
     "description": "Noise-cancelling wireless earbuds, spatial audio, battery 30h",
-    "image": "https://example.com/airpods-pro-white.jpg",
+    "image": "https://i.pinimg.com/736x/b8/65/05/b8650573eee1050ef1a4703d9dc70803.jpg",
     "keywords": ["airpods", "apple", "earbuds", "white"]
   },
   {
@@ -139,7 +139,7 @@
     "currency": "MAD",
     "stock": 10,
     "description": "Noise-cancelling wireless earbuds, spatial audio, battery 30h",
-    "image": "https://example.com/airpods-pro-blue.jpg",
+    "image": "https://i.pinimg.com/736x/d2/70/8d/d2708de0090aa0459c5cc6677ef31830.jpg",
     "keywords": ["airpods", "apple", "earbuds", "blue"]
   },
   {
@@ -150,7 +150,7 @@
     "currency": "MAD",
     "stock": 50,
     "description": "Apple original charger, fast charging, 20W",
-    "image": "https://example.com/charger-original.jpg",
+    "image": "https://i.pinimg.com/1200x/1c/b7/7a/1cb77a763ba591192d1586c68735e45b.jpg",
     "keywords": ["charger", "original", "apple"]
   },
   {
@@ -161,7 +161,7 @@
     "currency": "MAD",
     "stock": 100,
     "description": "High-quality copy charger, compatible with all iPhones",
-    "image": "https://example.com/charger-copy.jpg",
+    "image": "https://i.pinimg.com/1200x/3e/37/cb/3e37cb8ba65b3751db3b0ac7ce2cb5c9.jpg",
     "keywords": ["charger", "copy", "iphone"]
   }
   ]

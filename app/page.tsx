@@ -196,6 +196,8 @@ const handleOrderSubmit = (formData: OrderFormData) => {
                   <Image
                     src={selectedProduct.image}
                     alt={selectedProduct.name}
+                    width={192}
+                    height={192}
                     className="w-48 h-48 mx-auto rounded-2xl object-cover shadow-xl ring-4 ring-blue-100"
                     onError={(e) => {
                       e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiBmaWxsPSIjRjFGNUY5Ii8+CjxwYXRoIGQ9Ik02MCA2MEgxMzJWMTMySDYwVjYwWiIgZmlsbD0iI0UyRThGMCIvPgo8cGF0aCBkPSJNODQgOTZMOTYgODRMMTA4IDk2TDEyMCA4NEwxMzIgOTZWMTMySDYwVjk2TDcyIDEwOEw4NCA5NloiIGZpbGw9IiNDQkQ1RTEiLz4KPHN2Zz4K';
@@ -526,6 +528,8 @@ const handleOrderSubmit = (formData: OrderFormData) => {
                           <Image
                             src={product.image}
                             alt={product.name}
+                            width={64}
+                            height={64}
                             className="w-16 h-16 rounded-lg object-cover shadow-md"
                             onError={(e) => {
                               e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjRjFGNUY5Ii8+CjxwYXRoIGQ9Ik0yMCAyMEg0NFY0NEgyMFYyMFoiIGZpbGw9IiNFMkU4RjAiLz4KPHBhdGggZD0iTTI4IDMwTDMyIDI2TDM2IDMwTDQwIDI2TDQ0IDMwVjQ0SDIwVjMwTDI0IDM0TDI4IDMwWiIgZmlsbD0iI0NCRDVFMSIvPgo8L3N2Zz4K';
