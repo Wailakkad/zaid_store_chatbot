@@ -156,9 +156,47 @@ export default function ChatPage() {
     });
   };
 
-const handleOrderSubmit = (formData: OrderFormData) => {
-  console.log("Order submitted:", formData);
-  setShowOrderForm(false);
+const handleOrderSubmit = async (formData: OrderFormData) => {
+  try {
+    const orderData = {
+      ...formData,
+      product: selectedProduct, // Include the selected product
+      timestamp: new Date().toISOString()
+    };
+
+    const response = await fetch('/api/orders', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(orderData),
+    });
+
+    if (response.ok) {
+      // Show success message
+      const successMessage: Message = {
+        id: crypto.randomUUID(),
+        role: 'assistant',
+        content: 'sfy db la commande dyalk dazt mazyan ! Ghadi ntslo bik 9rib inshaAllah.',
+        timestamp: new Date(),
+      };
+      setMessages(prev => [...prev, successMessage]);
+    } else {
+      throw new Error('Failed to submit order');
+    }
+  } catch (error) {
+    // Show error message
+    const errorMessage: Message = {
+      id: crypto.randomUUID(),
+      role: 'assistant', 
+      content: 'Sorry, there was an issue submitting your order. Please try again or contact us directly.',
+      timestamp: new Date(),
+    };
+    setMessages(prev => [...prev, errorMessage]);
+  } finally {
+    setShowOrderForm(false);
+    setSelectedProduct(null);
+  }
 };
 
 
