@@ -61,6 +61,15 @@ export async function POST(req: Request) {
       </div>
     `;
 
+
+     if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
+      return NextResponse.json({ 
+        success: false,
+        message: "Email service is not configured properly."
+      }, { status: 500 });
+     }
+
+     
     // Send email notification
     if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
       await transporter.sendMail({
